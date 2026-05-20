@@ -1,0 +1,180 @@
+.my {
+  background: var(--bg-primary);
+  overflow-y: auto;
+  padding-bottom: 100px;
+}
+
+.my-header {
+  padding: max(52px, env(safe-area-inset-top, 52px)) 20px 0;
+  position: sticky;
+  top: 0;
+  background: var(--bg-primary);
+  z-index: 10;
+}
+
+.my-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.my-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid #1a1a1a;
+  padding-bottom: 0;
+}
+
+.my-tab {
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 15px;
+  font-weight: 700;
+  padding: 8px 20px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+  margin-bottom: -1px;
+}
+
+.my-tab.active {
+  color: var(--accent-pink);
+  border-bottom-color: var(--accent-lime);
+}
+
+.my-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.my-section-title {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.my-empty {
+  font-size: 14px;
+  color: var(--text-secondary);
+  padding: 12px 0;
+}
+
+.my-scroll {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.my-thumb {
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  flex-shrink: 0;
+  background-size: cover;
+  background-position: center;
+}
+
+.my-calendar {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.my-cal-day {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 4px;
+  border-radius: 12px;
+  transition: background 0.2s;
+}
+
+.my-cal-day.today {
+  background: #fff;
+}
+
+.my-cal-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+}
+
+.my-cal-day.today .my-cal-label {
+  color: #000;
+}
+
+.my-cal-num {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.my-cal-day.today .my-cal-num {
+  color: #000;
+}
+
+.my-cal-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #e53935;
+}
+
+.my-plan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.my-plan-card {
+  display: flex;
+  gap: 12px;
+  background: var(--bg-card);
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 12px;
+  align-items: center;
+}
+
+.my-plan-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+.my-plan-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.my-plan-cat {
+  font-size: 10px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.my-plan-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.my-plan-date {
+  font-size: 12px;
+  color: var(--accent-lime);
+  font-weight: 600;
+}

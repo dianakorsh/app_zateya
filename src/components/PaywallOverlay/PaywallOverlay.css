@@ -1,0 +1,49 @@
+.paywall-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(13,13,13,0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  animation: fadeIn 0.3s ease;
+  padding: 24px;
+}
+
+.paywall-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 340px;
+  text-align: center;
+}
+
+.paywall-emoji {
+  font-size: 64px;
+  animation: scaleIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.paywall-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.25;
+}
+
+.paywall-sub {
+  font-size: 15px;
+  color: #888;
+  line-height: 1.5;
+}
+
+.paywall-cta {
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.paywall-price {
+  font-size: 12px;
+  color: #555;
+}

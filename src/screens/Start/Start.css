@@ -1,0 +1,43 @@
+.start {
+  background: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  animation: fadeIn 0.4s ease;
+}
+
+.start-top {
+  padding-top: max(48px, env(safe-area-inset-top, 48px));
+  display: flex;
+  justify-content: center;
+}
+
+.start-logo-a {
+  filter: drop-shadow(0 0 16px rgba(255, 113, 51, 0.5));
+}
+
+.start-middle {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin-top: -20px;
+}
+
+.start-slogan {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text-primary);
+  text-align: center;
+  line-height: 1.3;
+}
+
+.start-cat {
+  filter: drop-shadow(0 8px 24px rgba(255,113,51,0.2));
+}
+
+.start-bottom {
+  padding: 24px 0 calc(32px + env(safe-area-inset-bottom, 0px));
+}
