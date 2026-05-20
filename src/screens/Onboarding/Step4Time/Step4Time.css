@@ -1,0 +1,23 @@
+.time-section {
+  margin-bottom: 8px;
+}
+
+.time-section-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.time-row {
+  display: flex;
+  gap: 8px;
+}
+
+.time-btn {
+  flex: 1;
+  height: 48px;
+  font-size: 14px;
+}

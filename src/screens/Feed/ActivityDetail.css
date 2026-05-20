@@ -1,0 +1,130 @@
+.detail {
+  background: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+  animation: slideInRight 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.detail-photo {
+  height: 55%;
+  flex-shrink: 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.detail-back {
+  position: absolute;
+  top: max(16px, env(safe-area-inset-top, 16px));
+  left: 16px;
+  width: 40px;
+  height: 40px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  z-index: 1;
+}
+
+.detail-photo-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 120px;
+  background: linear-gradient(to bottom, transparent, var(--bg-primary));
+}
+
+.detail-body {
+  flex: 1;
+  padding: 16px 20px 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-dot {
+  color: #333;
+}
+
+.detail-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.25;
+}
+
+.detail-info-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.detail-info-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.detail-info-icon {
+  font-size: 16px;
+}
+
+.detail-address {
+  font-size: 13px;
+  color: #555;
+  font-weight: 600;
+}
+
+.detail-description {
+  font-size: 15px;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.6;
+  padding-bottom: 8px;
+}
+
+.detail-actions {
+  display: flex;
+  gap: 12px;
+  padding: 16px 20px calc(24px + env(safe-area-inset-bottom, 0px));
+  flex-shrink: 0;
+}
+
+.detail-btn-skip {
+  flex: 1;
+  height: 56px;
+  background: transparent;
+  color: var(--text-primary);
+  border: 1.5px solid #333;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: border-color 0.2s;
+}
+
+.detail-btn-skip:active {
+  border-color: #555;
+}
+
+.detail-btn-plan {
+  flex: 2;
+  font-size: 15px;
+}
