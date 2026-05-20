@@ -1,0 +1,89 @@
+.ob-screen {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-bottom: calc(16px + var(--safe-bottom));
+}
+
+.ob-anim-left {
+  animation: slideLeft 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ob-anim-right {
+  animation: slideRight 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ob-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: calc(16px + var(--safe-top)) 24px 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.ob-back {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.ob-header {
+  padding: 8px 24px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.ob-title {
+  font-size: 32px;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 6px;
+}
+
+.ob-subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.ob-description {
+  font-size: 14px;
+  color: var(--accent-pink);
+  line-height: 1.5;
+}
+
+.ob-content {
+  flex: 1;
+  padding: 0 24px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ob-footer {
+  padding: 16px 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.ob-footer.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: all;
+}

@@ -1,0 +1,121 @@
+.swipe-card-wrapper {
+  position: absolute;
+  width: 100%;
+  will-change: transform;
+  cursor: grab;
+}
+
+.swipe-card-wrapper:active {
+  cursor: grabbing;
+}
+
+.swipe-card {
+  background: var(--bg-card);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  user-select: none;
+}
+
+.card-image-wrap {
+  position: relative;
+  height: 340px;
+  overflow: hidden;
+}
+
+.card-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 72px;
+  pointer-events: none;
+}
+
+.card-overlay.like {
+  background: linear-gradient(135deg, rgba(237,175,246,0.6) 0%, rgba(237,175,246,0.2) 100%);
+}
+
+.card-overlay.skip {
+  background: linear-gradient(135deg, rgba(80,80,80,0.6) 0%, rgba(80,80,80,0.2) 100%);
+}
+
+.card-info {
+  padding: 14px 16px 16px;
+  background: var(--bg-card);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.card-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-meta {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-transform: lowercase;
+}
+
+.card-heart {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #1A1A1A;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s;
+}
+
+.card-heart:active {
+  transform: scale(0.85);
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  line-height: 1.2;
+}
+
+.card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-schedule-price {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.card-schedule, .card-price {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.card-price {
+  color: rgba(255,255,255,0.7);
+}
+
+.card-distance {
+  font-size: 13px;
+  color: var(--accent-lime);
+  font-weight: 700;
+}

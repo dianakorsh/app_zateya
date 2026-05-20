@@ -1,0 +1,57 @@
+.paywall {
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.paywall-blur {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(12px);
+  background: rgba(13,13,13,0.75);
+}
+
+.paywall-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  width: 100%;
+}
+
+.paywall-emoji {
+  font-size: 48px;
+  margin-bottom: 4px;
+}
+
+.paywall-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+  line-height: 1.2;
+}
+
+.paywall-sub {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.paywall-btn {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.paywall-price {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
